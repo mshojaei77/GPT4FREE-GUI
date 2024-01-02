@@ -16,7 +16,7 @@ class GptChat(QWidget):
         self.provider_selection.setFixedSize(400, 25)
 
         self.messages_input_field.setPlaceholderText('Type your message here...')
-        prv = prv or ['GPTalk', 'Hashnode', 'GeekGpt', 'ChatBase', 'OnlineGpt', 'Llama2', 'Bing', 'AiChatOnline', 'Koala', 'Poe', 'PerplexityAi', 'GptGo', 'Bard', 'OpenaiChat', 'FakeGpt', 'DeepInfra', 'Phind', 'GptForLove']
+        prv = prv or ['GeekGpt','GPTalk', 'Hashnode', 'ChatBase', 'OnlineGpt', 'Llama2', 'Bing', 'AiChatOnline', 'Koala', 'Poe', 'PerplexityAi', 'GptGo', 'Bard', 'OpenaiChat', 'FakeGpt', 'DeepInfra', 'Phind', 'GptForLove']
 
         self.provider_selection.addItems(prv)
         self._prv = [getattr(g4f.Provider, prv[0])]
